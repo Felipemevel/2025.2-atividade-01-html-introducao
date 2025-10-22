@@ -5,23 +5,77 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/14/Gengar-PNG-File.png" type="image/x-icon">
         <title>ATIVIDADE 1 - HTML</title>
+        <style>
+            * {
+                margin: 0px;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            header {
+                border-bottom: 1px solid black;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 15px;
+            }
+            header > h1 {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            main {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                background-image: linear-gradient(to right, rgb(196, 110, 196),rgb(155, 58, 155) )
+            }
+            main > div > h2 {
+                margin-bottom: 15px;
+            }
+            main > div > h3 {
+                margin-top: 25px;
+                margin-bottom: 10px;
+            }
+            main > div > p {
+                margin-bottom: 15px;
+
+            }
+            main > div > ul > li {
+                margin-bottom: 15px;
+                list-style:circle;
+            }
+            #linksPessoais, #estudosAtuais, #techsConhecidas {
+                width: 40%;
+                border: 1px solid black;
+                border-radius: 5px;
+                padding: 15px;
+                margin: 8px;
+                box-shadow: black 1px 1px 8px 0px;
+                background-color: white;
+            
+            }
+            h2 {
+                color: #94269e;
+            }
+            h3 {
+                color: rgb(189, 93, 189);
+            }
+        </style>
     </head>
     <body style="font-family: Arial, Helvetica, sans-serif;">
-        <header style="border-bottom: 1px solid black; display: flex; flex-direction: column; align-items: center; padding: 15px;">
+        <header>
             <img src="https://avatars.githubusercontent.com/u/109548375?v=4" alt=""
             style="width: 250px; height: 250px; border-radius: 200px; border: 3px solid #750a75; box-shadow:black 2px 3px 15px 1px;">
-            <h2>
             <h1 style="text-decoration: underline; color: #750a75;">
                 Felipe André Silva do Nascimento
             </h1>
                 Estudante de análise e desenolvimento de sistemas, focado em back-end (Java) mas com base no front-end (o basico de javascript que eu já esqueci rsrsrs) 
-            </h2>
         </header>
-        <main style="align-items: center; display: flex; flex-direction: column;">
-            <div id="linksPessoais" style="width: 40%; border: 1px, solid, black; border-radius: 5px; padding: 15px; margin: 15px; box-shadow: black 1px 1px 1px 1px;">
-                <h3 style="color: #94269e;">
+        <main>
+            <div id="linksPessoais">
+                <h2 style="color: ">
                     Redes Sociais
-                </h3>
+                </h2>
                 <p>
                     Perfil Profissional:
                     <span>
@@ -41,38 +95,38 @@
                     </span>
                 </p>
             </div>
-            <div id="estudosAtuais" style="width: 40%; border: 1px, solid, black; border-radius: 5px; padding: 15px; margin: 15px; box-shadow: black 1px 1px 1px 1px;">
-                <h3 style="color: #94269e;">
+            <div id="estudosAtuais">
+                <h2>
                     O que estou estudando atualmente
-                </h3>
-                <h4>
+                </h2>
+                <h3>
                     Sistemas Digitais
-                </h4>
+                </h3>
                 <p style="text-indent: 2em;">
                     Sistemas Digitais é a disciplina que estuda a base fundamental de toda a computação moderna. Enquanto em outras matérias você aprende a "conversar" com o computador (através de linguagens de programação como Python ou Java), em Sistemas Digitais você aprende como o computador "pensa" no nível mais básico. O foco é entender como a informação é representada e processada usando apenas dois estados: ligado ou desligado (1 ou 0).
                 </p>
-                <h4>
+                <h3>
                     Web Design
-                </h4>
+                </h3>
                 <p style="text-indent: 2em;">
                     Web Design é a disciplina que estuda a base de como construímos a interação humana com a internet. Enquanto em outras matérias você aprende a criar a 'lógica' do servidor (o back-end), em Web Design você aprende a construir a 'interface' visual que o usuário final realmente vê e utiliza. O foco é entender como usar as tecnologias fundamentais (HTML, CSS e JavaScript) para estruturar conteúdo, aplicar estilo e criar interatividade de forma acessível e funcional.
                 </p>
-                <h4>
+                <h3>
                     Programação de Computadores
-                </h4>
+                </h3>
                 <p style="text-indent: 2em;">
                     Programação de Computadores é a disciplina que ensina a arte de "dar instruções" a uma máquina para que ela execute tarefas. Enquanto matérias como Sistemas Digitais explicam como o computador funciona por dentro, esta disciplina ensina como fazê-lo trabalhar para você, usando uma linguagem de programação como ponte de comunicação.          O foco é utilizar Python para dominar os conceitos universais da lógica de programação: como armazenar dados (variáveis), tomar decisões (condicionais) e repetir ações (laços), capacitando você a escrever seus primeiros algoritgos e solucionar problemas reais.
                 </p>
             </div>
-            <div id="tecsConhecidas" style="width: 40%; border: 1px, solid, black; border-radius: 5px; padding: 15px; margin: 15px; box-shadow: black 1px 1px 1px 1px;">
-                <h3 style="color: #94269e;">
+            <div id="techsConhecidas">
+                <h2>
                     Tecnlogias que já conheço
-                </h3>
+                </h2>
                 <p>
                     <ul>
                         <li>Java</li>
                         <li>SpringBoot</li>
-                        <li>Python</li>
+                        <li>Python 3</li>
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>JavaScript</li>
